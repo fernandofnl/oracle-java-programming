@@ -19,17 +19,23 @@ public class Tools {
 		System.out.println(option);
 	}
 	*/
-	public static void display(String str) {
+	/*public static void display(String str) {
 		System.out.println(str);
-		System.out.println("Este é um " +((Object) str).getClass().getName());;
+		
 	}
 	public static void display(double num) {
 		System.out.println(num);
-		System.out.println("Este é um " +((Object) num).getClass().getName());;
+		
 	}
 	public static void display(float flo) {
 		System.out.println(flo);
-		System.out.println("Este é um " +((Object) flo).getClass().getName());;
+		
+	}*/
+	
+	//mesmo comentando os metodos display, como existe um metodo generico nao interfere a execucao
+	
+	public static <T> void display(T info) { //declaracao de um tipo genércio
+		System.out.println(info);
 	}
 	
 	public static double sum(double num1, double num2 ) {

@@ -1,0 +1,8 @@
+package main;
+
+public class GenericClass2 <Type> {
+	
+	private nome;
+	
+
+}

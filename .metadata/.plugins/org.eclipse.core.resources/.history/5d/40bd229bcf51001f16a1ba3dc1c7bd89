@@ -1,0 +1,11 @@
+package main;
+
+public class GenericClass2 <Type1, Type2> {
+	
+	private Type1 password;
+	private Type2 nome;
+	
+	
+	
+
+}

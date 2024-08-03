@@ -1,22 +1,12 @@
 package auxiliary;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import main.AbstractClass;
-import main.ConcreteClass;
-import main.ConcreteClass1;
-import main.ConcreteClass2;
-import main.Enumeration;
-import main.ImmutableClass;
-import main.Register;
-import main.Tools;
+import main.GenericClass1;
+import main.GenericClass2;
 
 public class AuxiliaryTester {
 
 	public static void main(String[] args) {
-		ConcreteClass1 cc1 = new ConcreteClass1();
+		/* ConcreteClass1 cc1 = new ConcreteClass1();
 		ConcreteClass2 cc2 = new ConcreteClass2();
 
 		cc1.setPassword(5555);
@@ -52,7 +42,7 @@ public class AuxiliaryTester {
 		System.out.println("Fim do roteiro 4.");
 		System.out.println("----------------------------------");
 
-		System.out.println("Inicio do roteiro 6.");
+		System.out.println("Inicio do roteiro 6.");*/
 
 		/*
 		 * Tools t01 = new Tools(); Tools t02 = new Tools();
@@ -64,13 +54,12 @@ public class AuxiliaryTester {
 		
 		Tools.option = 'D';
 		Tools.printOption();
- */
+		 */
 		
-		Tools.display("Vai corinthians!");
+		/*Tools.display("Vai corinthians!");
 		Tools.display(23.22);
 		Tools.display(34.22f);
 		
-		 
 		double res = Tools.sum(33, 15.55);
 		System.out.println(100 + res);
 		
@@ -117,21 +106,21 @@ public class AuxiliaryTester {
 		for (Enumeration enumTemp : Enumeration.values()) {
 			System.out.println(enumTemp.getValue1());
 			System.out.println(enumTemp.getValue2());
-		}
+		}*/
 		
-		System.out.println("Fim do roteiro 8.");
+		/*System.out.println("Fim do roteiro 8.");
 		System.out.println("----------------------------------");
 		
 		System.out.println("Inicio do roteiro 9.");
 		
 		List<String> habitat  = new ArrayList<>();
-		/*habitat.add("Florestas Tropicais");
+		habitat.add("Florestas Tropicais");
 		habitat.add("Florestas Deciduas");
 		habitat.add("Bosques de arbustos");
 		habitat.add("Terra firme");
 		habitat.add("Savanas");*/
 		
-		habitat.addAll(Arrays.asList("Florestas Tropicais",
+		/*habitat.addAll(Arrays.asList("Florestas Tropicais",
 				"Florestas Deciduas", "Bosques de arbustos", "Terra firme",
 				"Savanas"));
 				
@@ -166,6 +155,42 @@ public class AuxiliaryTester {
 		
 		habitat2.add("Oceanos");
 		System.out.println(reg1);
+		
+		System.out.println("Fim do roteiro 10.");
+		System.out.println("----------------------------------");*/
+		
+		System.out.println("Inicio do roteiro 11.");
+		/*System.out.println();
+		
+		GenericClass1 gc1 = new GenericClass1();
+		System.out.println(gc1.getPassword());
+		
+		gc1.setPassword(6666);
+		Object password = gc1.getPassword();
+		password = (int) password + 1111;
+		System.out.println(password);
+		gc1.setPassword("senha");
+		System.out.println(gc1.getPassword());*/
+		
+		GenericClass1<String> gc1 = new GenericClass1<>();
+		gc1.setPassword("senha");
+		System.out.println(gc1.getPassword());
+		
+		System.out.println();
+
+		GenericClass1<Integer> gc2 = new GenericClass1<>();
+		gc2.setPassword(1203);
+		System.out.println(gc2.getPassword());
+		System.out.println();
+		
+		System.out.println("===== A partir daqui é classe 2 =====");
+		GenericClass2<Integer, String> gc3 = new GenericClass2<>();
+		gc3.setDescription("IMPACTA!!");
+		gc3.setPassword(987654321);
+		System.out.println(gc3.getDescription());
+		System.out.println(gc3.getPassword());
+		
+		
 		
 		
 		
