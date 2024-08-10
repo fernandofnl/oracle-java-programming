@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="main.GenericClass1"/>
+    <fullyQualifiedTypeName name="section2_3.MontainBike"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 </qualifiedTypeNameHistroy>

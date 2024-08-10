@@ -1,7 +1,0 @@
-package main;
-
-public class GenericClass <Type> {
-
-	private Type password = "impacta123";
-	
-}
