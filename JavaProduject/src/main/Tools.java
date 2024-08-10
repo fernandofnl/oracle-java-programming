@@ -6,7 +6,8 @@ public class Tools {
 	public char alternative = 'a';// nesse caso precisamos instanciar a classe 
 	
 	//Behaviors
-	/*
+	
+	@Annotation2()
 	public static void printOption() {
 		System.out.println(option);
 	}
@@ -18,8 +19,9 @@ public class Tools {
 	public void printOp() {
 		System.out.println(option);
 	}
-	*/
-	/*public static void display(String str) {
+	
+	@Annotation2()
+	public static void display(String str) {
 		System.out.println(str);
 		
 	}
@@ -30,10 +32,11 @@ public class Tools {
 	public static void display(float flo) {
 		System.out.println(flo);
 		
-	}*/
+	}
 	
 	//mesmo comentando os metodos display, como existe um metodo generico nao interfere a execucao
 	
+	@Annotation1("Método genérico utilizado!")
 	public static <T> void display(T info) { //declaracao de um tipo genércio
 		System.out.println(info);
 	}
