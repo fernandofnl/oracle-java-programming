@@ -3,4 +3,7 @@
     <fullyQualifiedTypeName name="main.GenericClass1"/>
     <fullyQualifiedTypeName name="section2_3.MontainBike"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="section3_1.wildcards.GenericMethodClass"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="section3_2.CellCollection"/>
 </qualifiedTypeNameHistroy>
