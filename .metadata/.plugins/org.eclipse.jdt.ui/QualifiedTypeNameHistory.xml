@@ -6,4 +6,5 @@
     <fullyQualifiedTypeName name="section3_1.wildcards.GenericMethodClass"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="section3_2.CellCollection"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>
